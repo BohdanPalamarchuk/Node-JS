@@ -1,0 +1,42 @@
+[
+    {
+        "url": "zhytomyr",
+        "name": "Zhytomyr"
+    },
+    {
+        "url": "kyiv",
+        "name": "Kyiv"
+    },
+    {
+        "url": "lviv",
+        "name": "Lviv"
+    },
+    {
+        "url": "odesa",
+        "name": "Odesa"
+    },
+    {
+        "url": "rivne",
+        "name": "Rivne"
+    },
+    {
+        "url": "poltava",
+        "name": "Poltava"
+    },
+    {
+        "url": "kherson",
+        "name": "Kherson"
+    },
+    {
+        "url": "khmelnytskyi",
+        "name": "Khmelnytskyi"
+    },
+    {
+        "url": "chernivtsi",
+        "name": "Chernivtsi"
+    },
+    {
+        "url": "sumy",
+        "name": "Sumy"
+    }
+]

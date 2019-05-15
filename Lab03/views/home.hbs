@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Home Page</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <style>
+            *{
+                padding: 0;
+                margin: 0;
+            }
+            body{
+                overflow: hidden;
+            }
+            h1{
+                width: 100%;
+                background: #3B83BD;
+                height: 60px;
+                line-height: 55px;
+                font-family: Roboto;
+                font-weight: 300;
+                color: white;
+                padding-left: 20px;
+            }
+            ul{
+                margin-top: 20px;
+                padding-left: 20px;
+            }
+            li{
+                list-style: none;
+                border: 1px solid #3B83BD;
+                width: 20%;
+                height: 35px;
+                margin-bottom: 5px;
+                font-family: Roboto;
+                font-size: 20px;
+                padding-left: 10px;
+                line-height: 35px;
+            }
+            a{
+                text-decoration: none;
+                color: black;
+            }
+            a > li:hover{
+                color: white;
+                background: #3B83BD;
+                width: 20.5%;
+            }
+            footer{
+                background: #3B83BD;
+                color: white;
+                font-family: Roboto;
+                position: absolute;
+                height: 60px;
+                bottom: 0;
+                width: 100%;
+                line-height: 25px;
+                padding-left: 20px;
+            }
+            footer span{
+                display: flex;
+                flex-direction: column;
+            }
+        </style>
+    </head>
+    <body>
+        {{> header}}
+        <div>
+            <ul>
+                {{#each cityes}}
+                <a href="weather/{{this.url}}" class="city"><li>{{this.name}}</li></a>
+                {{/each}}
+            </ul>
+        </div>
+        {{> footer}}
+        
+    </body>
+</html>
